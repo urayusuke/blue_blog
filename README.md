@@ -15,7 +15,7 @@ Things you may want to cover:
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null:false|
+|name|string|null: false|
 |email|string|null: false|
 |password|string|null: false|
 
@@ -39,6 +39,8 @@ Things you may want to cover:
 |image|string|null: false|
 |articles_id|references|null: false|
 
+### Association
+- belongs_to :article
 
 * Database initialization
 
