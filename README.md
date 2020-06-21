@@ -12,6 +12,33 @@ Things you may want to cover:
 * Configuration
 
 * Database creation
+## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null:false|
+|email|string|null: false|
+|password|string|null: false|
+
+### Association
+- has_many :articles
+
+## articlesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|title|string|null: false|
+|subtitle|text|null: false|
+|content|text|null :false|
+
+### Association
+- belongs_to :user
+- has_many :images
+
+## imagesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|image|string|null: false|
+|articles_id|references|null: false|
+
 
 * Database initialization
 
