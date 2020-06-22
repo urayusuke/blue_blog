@@ -27,7 +27,7 @@ Things you may want to cover:
 |------|----|-------|
 |title|string|null: false|
 |subtitle|text|null: false|
-|content|text|null :false|
+|content|text|null: false|
 
 ### Association
 - belongs_to :user
@@ -41,6 +41,7 @@ Things you may want to cover:
 
 ### Association
 - belongs_to :article
+
 
 * Database initialization
 
