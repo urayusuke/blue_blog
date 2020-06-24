@@ -1,0 +1,95 @@
+.header{
+  background-color: #8EB8FF;
+  height: 80px;
+  width: 100%;
+  &__title{
+    color: blue;
+    h1{
+      font-family: 'Arial Rounded MT Bold',sans-serif;
+      line-height: 70px;
+      padding-left: 40px;
+      margin-top: 0;
+      font-size: 40px;
+    }
+  }
+}
+
+.contents{
+  height: 100%;
+  width: 100%;
+  background-color: cyan;
+  &__top{
+    height: 300px;
+    padding: 40px;
+    display: flex;
+    &-popularity{
+      width: calc(100% / 2);
+      height: 300px;
+      background-color: green;
+      ul{
+        display: flex;
+        justify-content: center;
+        padding-top: 25px;
+        li{
+          width: 250px;
+          height: 250px;
+          margin-left: 20px;
+          margin-right: 20px;
+          border: 2px solid black;
+        }
+      }
+    }
+    &-recommend{
+      width: calc(100% / 2);
+      height: 300px;
+      background-color: red;
+      margin-left: 50px;
+      ul{
+        display: flex;
+        justify-content: center;
+        padding-top: 25px;
+        li{
+          width: 250px;
+          height: 250px;
+          margin-left: 20px;
+          margin-right: 20px;
+          border: 2px solid black;
+        }
+      }
+    }
+  }
+  &__side{
+    height: 60vh;
+    width: 300px;
+    background-color: black;
+    margin-left: 40px;
+    margin-top: 70px;
+    float: left;
+    &-profile{
+      width: 15vw;
+      height: 200px;
+      border: 1px solid white;
+      margin-left: 40px;
+      top: 0;
+    }
+    &-input{
+      width: 15vw;
+      height: 20px;
+      margin-left: 40px;
+    }
+  }
+  &__main{
+    width: 70vw;
+    height: 100vh;
+    background-color: yellow;
+    margin-top: 70px;
+    margin-left: 390px;
+  }
+}
+
+.footer{
+  height: 20vh;
+  width: 100%;
+  background-color: gray;
+  bottom: 0;
+}
