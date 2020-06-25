@@ -1,0 +1,8 @@
+= render partial: 'header'
+.article
+  = form_for @article do |a|
+    = a.text_field :title,placeholder:"タイトル"
+    = a.text_field :subtitle,placeholder:"サブタイトル"
+    = a.text_area :content,placeholder:"本 文"
+    = a.submit "投 稿",class:"post-btn"
+= render partial: 'footer'

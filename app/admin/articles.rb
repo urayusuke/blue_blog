@@ -5,7 +5,7 @@ ActiveAdmin.register Article do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  # permit_params :title, :subtitle, :content
+  permit_params :title, :subtitle, :content
   #
   # or
   #
@@ -14,5 +14,6 @@ ActiveAdmin.register Article do
   #   permitted << :other if params[:action] == 'create' && current_user.admin?
   #   permitted
   # end
+  
   
 end

@@ -1,6 +1,4 @@
-.header
-  .header__title
-    %h1 blue blog
+= render partial: 'header'
 .contents
   .contents__top
     .contents__top-popularity
@@ -19,5 +17,11 @@
     .contents__side-input
       %input
   .contents__main
-.footer
-  %h2 blue blog
+    - @articles.each do |article|
+      .contents__main-article
+        = icon("fas", "newspaper")
+        .contents__main-article-title
+          = article.title
+        .contents__main-article-subtitle
+          = article.subtitle
+= render partial: 'footer'
