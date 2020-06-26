@@ -1,5 +1,5 @@
 .header{
-  background-color: #8EB8FF;
+  background-color: #00d9ff;
   height: 80px;
   width: 100%;
   position: relative;
@@ -34,22 +34,24 @@
     &-popularity{
       width: calc(100% / 2);
       height: 300px;
-      border: 2px solid green;
+      border: 2px solid blue;
       @include subh2;
       @include contents-top;
       background-image: url("/image/photo-1492158244976-29b84ba93025.jpeg");
       background-size: 100%;
+      opacity: 0.7;
     }
     &-recommend{
       width: calc(100% / 2);
       height: 300px;
-      border: 2px solid red;
+      border: 2px solid #4c6cb3;
       margin-left: 50px;
       @include subh2;
       @include contents-top;
       background-image: url("/image/work-stations-plus-espresso.jpg");
       background-size: 100%;
       background-position: right 20% bottom 30%;
+      opacity: 0.7;
     }
   }
   &__side{
@@ -82,21 +84,36 @@
     margin-bottom: 50px;
     opacity: 0.7;
     text-align: center;
-    position: relative;
+    border: 2px solid #1e90ff;
     &-article{
-      width: 40vw;
+      width: 50vw;
       margin: 0 auto;
-      padding-top: 100px;
+      padding: 30px 0px;
       margin-bottom: 60px;
-      margin-top: 30px;
-      background-color: blue;
+      margin-top: 5px;
+      background-color: #1e90ff;
       display: flex;
-      flex-direction: column;
+      // flex-direction: column;
+      position: relative;
+      top: 50px;
+      color: yellow;
       i{
         font-size: 100px;
+        padding-left: 60px;
       }
       &-title{
-
+        padding-top: 35px;
+        padding-left: 30px;
+        font-size: 25px;
+        font-family: 'Osaka',sans-serif;
+        font-weight: bold;
+      }
+      &-subtitle{
+        padding-top: 42px;
+        padding-left: 40px;
+        font-size: 15px;
+        font-family: 'HanziPen SC',sans-serif;
+        font-weight: 1000px;
       }
     }
   }
@@ -105,7 +122,7 @@
 .footer{
   height: 15vh;
   width: 100%;
-  background-color: gray;
+  background-color: #002b33;
   bottom: 0;
   opacity: 0.8;
   position: relative;
@@ -114,7 +131,7 @@
     position: absolute;
     font-size: 30px;
     color: white;
-    opacity: 0.6;
+    opacity: 0.8;
     top: 40px;
     right: 40px;
   }

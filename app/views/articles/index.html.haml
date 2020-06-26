@@ -17,11 +17,12 @@
     .contents__side-input
       %input
   .contents__main
-    - @articles.each do |article|
+    - @article.first(3).each do |article|
       .contents__main-article
         = icon("fas", "newspaper")
         .contents__main-article-title
           = article.title
         .contents__main-article-subtitle
           = article.subtitle
+    =paginate(@articles)
 = render partial: 'footer'
