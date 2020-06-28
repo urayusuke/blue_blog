@@ -50,6 +50,6 @@ test:
 production:
   <<: *default
   database: blue_blog_production
-  username: root
+  username: blue_blog
   password: <%= ENV['BLUE_BLOG_DATABASE_PASSWORD'] %>
   socket: /var/lib/mysql/mysql.sock
