@@ -1,0 +1,11 @@
+= render partial: 'header'
+.article
+  .article__show-title
+    = @article.title
+  .article__show-subtitle
+    = @article.subtitle
+  .article__show-create
+    = @article.created_at.strftime("%Y年%m月%d日 %H:%M")
+  .article__show-content
+    = @article.content
+= render partial: 'footer'

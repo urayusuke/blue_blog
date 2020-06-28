@@ -1,5 +1,5 @@
 .header
   .header__title
     = link_to 'blue blog', root_path,class:"main__title"
-    = link_to '投稿する', new_article_path, class:"post"
-    
+    -if user_signed_in?
+      = link_to '投稿する', new_article_path, class:"post"

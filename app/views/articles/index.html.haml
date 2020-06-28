@@ -1,28 +1,45 @@
 = render partial: 'header'
 .contents
   .contents__top
-    .contents__top-popularity
-      %h2 人気記事！
-      %ul
-        %li
-        %li
+    -# .contents__top-popularity
+    -#   %h2 新着記事！
+    -#   %ul
+    -#     %li
+    -#     %li
     .contents__top-recommend
       %h2 おすすめ記事！
-      %ul
-        %li
-        %li
+      - @article.shuffle.first(4).each do |article|
+        = link_to article_path(article.id) do
+          %ul
+            %li
+              .contents__top-recommend-article
+                = icon("fas", "newspaper")
+                .contents__top-recommend-article-title
+                  = article.title
+                .contents__top-recommend-article-subtitle
+                  = article.subtitle
   .contents__side
     .contents__side-profile
-      %img
+      %h1 プロフィール
+      = image_tag "/image/IMG_20200628_191537.jpg",class:"profile__image"
+      %h2 blue 
+      %p 【徳島出身】
+      %br【TECH CAMP 卒業】
+      %br 【取得言語】
+      %br HTML/CSS/JavaScript
+      %br Ruby/Ruby on Rails
+      %br 【現在学習中】
+      %br PHP/java
     .contents__side-input
-      %input
+      -# %input
   .contents__main
     - @article.first(3).each do |article|
-      .contents__main-article
-        = icon("fas", "newspaper")
-        .contents__main-article-title
-          = article.title
-        .contents__main-article-subtitle
-          = article.subtitle
+      = link_to article_path(article.id) do
+        .contents__main-article
+          = icon("fas", "newspaper")  
+          .contents__main-article-title
+            = article.title
+          .contents__main-article-subtitle
+            = article.subtitle
     =paginate(@articles)
 = render partial: 'footer'
