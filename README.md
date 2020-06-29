@@ -1,17 +1,16 @@
-# README
+# blue blog
+- 自分専用のブログサイト
+- 仮完成の状態で今後、改善していきます
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# 接続先情報
+URL:http://54.248.170.87/
 
-Things you may want to cover:
+# 開発環境
+- 言語：Ruby/Ruby on Rails/JavaScript
+- ツール:Github/Visual Studio Code
+- DB:MySQL
+- サーバー:AWS
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
@@ -42,13 +41,3 @@ Things you may want to cover:
 ### Association
 - belongs_to :article
 
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
