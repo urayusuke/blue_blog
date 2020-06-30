@@ -1,13 +1,10 @@
 = render partial: 'header' 
 .article
   = form_for @article do |a|
-    .article__show-title
-      = a.text_field :title
-    .article__show-subtitle
-      = a.text_field :subtitle
-    .article__show-content
-      = a.text_area :content
+    = a.text_field :title
+    = a.text_field :subtitle
+    = a.text_area :content
     = a.submit "更 新",class:"edit-btn"
   -if user_signed_in?
-    = link_to '削除',article_path(@article.id), method: :delete
+    = link_to '削除',article_path(@article.id), method: :delete,class:"delete"
 = render partial: 'footer'
