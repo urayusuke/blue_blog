@@ -1,5 +1,8 @@
 = render partial: 'header' 
 .article
+  -if user_signed_in?
+    = link_to '編集',edit_article_path(@article.id), class: "article__show"
+    = link_to '削除',article_path(@article.id), method: :delete, class: "article__show"
   .article__show-title
     = @article.title
   .article__show-subtitle
@@ -7,8 +10,5 @@
   .article__show-create
     = @article.created_at.strftime("%Y年%m月%d日 %H:%M")
   .article__show-content
-    = @article.content
-  -if user_signed_in?
-    = link_to '編集',edit_article_path(@article.id)
-    = link_to '削除',article_path(@article.id), method: :delete
+    = markdown(@article.content)
 = render partial: 'footer'

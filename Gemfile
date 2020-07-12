@@ -79,6 +79,8 @@ gem 'mini_magick'
 gem 'font-awesome-sass'
 gem 'kaminari'
 
+gem 'redcarpet'
+
 group :production do
   gem 'unicorn', '5.4.1'
 end
