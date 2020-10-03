@@ -78,6 +78,7 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'font-awesome-sass'
 gem 'kaminari'
+gem 'jquery-rails'
 
 gem 'redcarpet'
 

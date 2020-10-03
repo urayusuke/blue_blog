@@ -1,0 +1,251 @@
+.html
+  .header__portfolio
+    = link_to "YusukePortfolio", portfolios_path, class:"header__portfolio--title"
+  .navigation
+    %ul
+      %li
+        %a{:href => "#profile"} プロフィール
+      %li
+        %a{:href => "#production"} 製作物
+      %li
+        %a{:href => "#skill"} スキル
+  .reason
+    %p
+      たった一つの動画が約2万再生を記録した
+      %br 
+      パソコン一つで色んな人の感動を生んだ
+      %br 
+      パソコンで何かを作る人になりたいと強く思うようになった
+      %br 
+      WEBページを教えてもらった時
+      %br 
+      世界が変わるような衝撃を受けた
+      %br
+      そこから僕はエンジニアを目指すきっかけとなった
+    %video{:autoplay => "", :loop => "", :muted => "", :src => "/video/LuRjPEcQ8sJjImDw1.mp4"}
+  #profile.profile
+    .profile__bar
+      %h1 プロフィール
+    %img.profile__image{:src => "image/1583241690590.jpeg"}/
+    %h2 浦 佑輔
+    %h3 徳島出身 1993年生まれ
+    .profile__impression
+      %h4
+        周りから言われた印象
+      %p.profile__impression--list
+        責任感が強い
+        %wbr 積極的な行動力
+        %br ムードメーカー 挑戦意欲
+        %wbr 優しさの鬼 笑顔が素敵
+        %br なんちゃって徳島 愛されっ子
+        %wbr 気遣いが出来る
+    .profile__career
+      %h1 ■ 経 歴
+      %p
+        %br>/
+        奈良大学社会学部心理学科 卒業 ➡︎
+        %wbr
+          徳島のイベント会社へ入社 ➡︎
+          %br/
+          あすたむらんど徳島 イベント企画担当
+          = succeed "\u27A1\uFE0E\u3010\u30A4\u30D9\u30F3\u30C8\u4F1A\u793E\u9000\u793E\u5F8C\u3011" do
+            %br/
+          = succeed "\u30A2\u30B8\u30E3\u30A4\u30EB\u958B\u767A\u306E\u30B9\u30AF\u30E9\u30E0\u30DE\u30B9\u30BF\u30FC\u62C5\u5F53" do
+            %br/
+          = succeed "\u27A1\uFE0E\u30102020\u5E746\u670826\u65E5\u3011" do
+            %br/
+          %br/
+    .profile__hobby
+      %h1 ■ 趣 味
+      %p
+        サッカー観戦（好きなチーム：マンチェスター・ユナイテッドFC）
+        = succeed "\u97F3\u697D\u9451\u8CDE\uFF08\u597D\u304D\u306A\u30A2\u30FC\u30C6\u30A3\u30B9\u30C8\uFF1ABUMP" do
+          %br/
+        = succeed "\u30B2\u30FC\u30E0" do
+          %br/
+        %wbr
+          アコースティックギター
+          %wbr
+            ドライブ
+            %wbr
+              スノーボード
+              %wbr
+                漫画
+                %wbr
+                  読書
+  #production.production
+    .production__bar
+      %h1 製作物
+    .production__list
+      %ul
+        %li
+          %h2 bookshelf
+          = image_tag "/image/bookshelf.png"
+          %p
+            本の登録サイト
+            = succeed "PHP/Laravel\u3092\u72EC\u5B66\u3067\u52C9\u5F37" do
+              %br/
+            = succeed "PHP/Laravel\u3067\u306E\u521D\u958B\u767A" do
+              %br/
+            = succeed "\u3010\u4F5C\u6210\u7406\u7531\u3011" do
+              %br/
+            = succeed "\u30FB\u5B66\u7FD2\u3057\u305F\u4E8B\u3092\u6D3B\u304B\u3059\u305F\u3081" do
+              %br/
+            = succeed "\u30FB\u57FA\u672C\u64CD\u4F5C\u30FB\u8A18\u8FF0\u3092\u7DF4\u7FD2\u3059\u308B\u305F\u3081" do
+              %br/
+          = link_to "GitHub","https://github.com/urayusuke/bookshelf",class:"production__list-link7"
+          = link_to "bookshelf","http://bookshelf20.herokuapp.com/",class:"production__list-link8"
+        %li
+          %h2 blue_blog
+          = image_tag "/image/blue_blog1.jpg"
+          %p
+            自分専用のブログサイト
+            = succeed "\u4EEE\u5B8C\u6210\u306E\u72B6\u614B\u3067\u4ECA\u5F8C\u3001\u6539\u5584\u3057\u3066\u3044\u304D\u307E\u3059" do
+              %br/
+            = succeed "\u3010\u4F5C\u6210\u7406\u7531\u3011" do
+              %br/
+            = succeed "\u30FBRuby" do
+              %br/
+            = succeed "\u30FB\u65B0\u3057\u3044\u6280\u8853\u3092\u53D6\u5F97\u3057\u305F\u6642\u306B\u3001" do
+              %br/
+            = succeed "\u30A2\u30A6\u30C8\u30D7\u30C3\u30C8\u3059\u308B\u305F\u3081" do
+              %br/
+          = link_to "GitHub","https://github.com/urayusuke/blue_blog",class:"production__list-link"
+          = link_to "blue_blog","http://54.248.170.87/",class:"production__list-link1"
+        %li
+          %h2 Tic
+          = image_tag "/image/Tic1.jpg"
+          %p
+            観光写真投稿型のWEBアプリケーション
+            = succeed "\u521D\u3081\u3066\u306E\u500B\u4EBA\u30A2\u30D7\u30EA\u3010\u7D042\u9031\u9593\u3067\u4F5C\u6210\u3011" do
+              %br/
+            = succeed "\u3010\u4F5C\u6210\u7406\u7531\u3011" do
+              %br/
+            = succeed "\u30FBJavaScript\u306E\u7406\u89E3\u5EA6\u3092\u4E0A\u3052\u308B\u305F\u3081" do
+              %br/
+            = succeed "\u30FB\u753B\u50CF\u3092\u4F7F\u7528\u3057\u3066\u52D5\u304D\u306E\u3042\u308B" do
+              %br/
+            = succeed "WEB\u30A2\u30D7\u30EA\u30B1\u30FC\u30B7\u30E7\u30F3\u3092\u4F5C\u6210\u3059\u308B\u305F\u3081" do
+              %br/
+          = link_to "GitHub","https://github.com/urayusuke/Tic",class:"production__list-link2"
+          = link_to "Tic","https://tic20.herokuapp.com/",class:"production__list-link3"
+      %ul
+        %li
+          %h2 FURIMA
+          = image_tag "/image/furima_top1.jpg"
+          %p
+            【TECH CAMP】
+            = succeed "FURIMA\u30B5\u30A4\u30C8" do
+              %br/
+            = succeed "\u521D\u3081\u3066\u306E\u30C1\u30FC\u30E0\u958B\u767A\u3067\u4F5C\u6210" do
+              %br/
+            = succeed "\u3010ID/Pass\u3011" do
+              %br/
+            = succeed "ID:" do
+              %br/
+            = succeed "Pass:" do
+              %br/
+          = link_to "GitHub","https://github.com/urayusuke/fleamarket_sample_76b",class:"production__list-link4"
+          = link_to "FURIMA","http://54.95.199.71/",class:"production__list-link5"
+        %li
+          %h2 ChatSpace
+          = image_tag "/image/chatspace1.png"
+          %p
+            【TECH CAMP】
+            = succeed "\u30C1\u30E3\u30C3\u30C8\u5F0F\u306EWEB\u30A2\u30D7\u30EA\u30B1\u30FC\u30B7\u30E7\u30F3" do
+              %br/
+            = succeed "\u30AB\u30EA\u30AD\u30E5\u30E9\u30E0\u306E\u8AB2\u984C" do
+              %br/
+          = link_to "GitHub", "https://github.com/urayusuke/chat-space",class:"production__list-link6"
+        %li
+          %h2 3年目 SINGINGTREE
+          %video{:autoplay => "", :loop => "", :muted => "", :src => "/video/80300093_159903481904428_5129609011752913656_n1.mp4"}
+          %p
+            【あすたむらんど徳島】勤務3年目の作品
+            = succeed "\u521D\u306ERGB\u5316\u3092\u9054\u6210" do
+              %br/
+  #skill.skill
+    .skill__bar
+      %h1 スキル
+    .time
+      2020年 9月 30日 更 新
+    :javascript
+      //var data = <haml_silent>
+      </haml_silent>
+                //var data1 = <haml_silent>
+      </haml_silent>
+                //var data2 = <haml_silent>
+      </haml_silent>
+                //var data3 = <haml_silent>
+      </haml_silent>
+                //var data4 = <haml_silent>
+      </haml_silent>
+                //var data5 = <haml_silent>
+      </haml_silent>
+                //var data6 = <haml_silent>
+      </haml_silent>
+                //var data7 = <haml_silent>
+      </haml_silent>
+                //var data8 = <haml_silent>
+      </haml_silent>
+                //var data9 = <haml_silent>
+      </haml_silent>
+    %canvas#myChart
+    %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"}
+    :javascript
+      var ctx = document.getElementById('myChart').getContext('2d');
+              var chart = new Chart(ctx, {
+              type: 'bar',
+              data: {
+                labels: ["Illustrator", "HTML5", "CSS", "Ruby", "Ruby on Rails", "JavaScript","React","PHP","Laravel","flutter","Java","MySQL","AWS"],
+                datasets: [{
+                    label: "学習時間",
+                    data: [600, 650, 650, 610, 610, 510, 4, 344, 212, 12, 30, 640, 200],
+                    backgroundColor: 'royalblue',
+                    borderColor: 'royalblue',
+                  }]
+                },
+              options:{
+              legend: {
+                labels: {
+                  fontColor: 'white',
+                  fontSize:20
+                }
+              },
+              layout: {
+                padding:{
+                        left:45,
+                        right:45,
+                        top:50,
+                        bottom:70
+                      }
+              },
+              scales: {
+                yAxes: [{
+                  gridLines: {
+                      color: "white", // 補助線の色
+                      zeroLineColor: "white",
+                      lineWidth: 0.6,
+                  },
+                  ticks: {
+                    suggestedMax: 1000,
+                    suggestedMin: 0,
+                    fontColor: 'white',
+                    fontSize: 15,
+                    padding: 10,
+                    callback: function(value, index, values){
+                      return  value +  ' 時間'
+                    }
+                  },
+                }],
+                xAxes: [{
+                  ticks: {
+                    fontColor: 'white',
+                    fontSize: 14
+                  }
+                }]
+              }
+            }
+              });
+  .footer__protfolio
+    = link_to "YusukePortfolio", portfolios_path, class:"footer__protfolio--title"
