@@ -90,16 +90,19 @@ ActiveRecord::Schema.define(version: 2020_07_07_071214) do
 
   create_table "portfolios", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "user_id"
-    t.integer "illustrator"
-    t.integer "photoshop"
-    t.integer "light_o_rama"
-    t.integer "html"
-    t.integer "css"
-    t.integer "ruby"
-    t.integer "ruby_on_rails"
-    t.integer "javascript"
-    t.integer "php"
-    t.integer "java"
+    t.integer "Illustrator"
+    t.integer "HTML"
+    t.integer "CSS"
+    t.integer "Ruby"
+    t.integer "Ruby_on_Rails"
+    t.integer "JavaScript"
+    t.integer "PHP"
+    t.integer "Laravel"
+    t.integer "Java"
+    t.integer "MySQL"
+    t.integer "AWS"
+    t.integer "flutter"
+    t.integer "React"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
