@@ -125,7 +125,7 @@
     .skill__bar
       %h1 スキル
     .time
-      2020年 10月 7日 更 新
+      2020年 10月 11日 更 新
     //- @portfolios.each do |portfolio|
     //  = portfolio.updated_at.strftime("%Y年 %m月 %d日 更 新") 
     -# :javascript
@@ -150,10 +150,11 @@
               var chart = new Chart(ctx, {
               type: 'bar',
               data: {
-                labels: ["Illustrator", "HTML", "CSS", "Ruby", "Ruby on Rails", "JavaScript","React","PHP","Laravel","flutter","Java","MySQL","AWS"],
+                labels: ["Illustrator", "HTML", "CSS", "Ruby", "Ruby on Rails","JavaScript",
+                "React","PHP","Laravel","flutter","Java","MySQL","AWS"],
                 datasets: [{
                     label: "学習時間",
-                    data: [600, 660, 660, 620, 620, 510, 8, 344, 212, 14, 30, 640, 200],
+                    data: [600, 660, 660, 620, 620, 510, 8, 344, 212, 18, 30, 640, 200],
                     backgroundColor: 'royalblue',
                     borderColor: 'royalblue',
                   }]
