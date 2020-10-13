@@ -68,7 +68,7 @@
   color: white;
   background-color: #202020;
   margin-top: 20px;
-  position: relative;
+  // position: relative;
   &__bar{
     height: 70px;
     width: 100%;
@@ -90,17 +90,22 @@
     border-radius: 50%;
     margin: 40px 9%;
   }
-  h2{
-    margin-left: 15%;
-    margin-top: -20px;
-    margin-right: 70%;
-    font-weight: bold;
-  }
-  h3{
-    margin-left: 11%;
-    margin-top: 12px;
-    margin-bottom: 20px;
-    margin-right:70%;
+  &__name{
+    width: 35%;
+    height: 200px;
+    left: 20%;
+    text-align: center;
+    h2{
+      // margin-top: -20px;
+      // margin-left: 20%;
+      font-weight: bold;
+    }
+    h3{
+      // margin-left: 11%;
+      // margin-top: 12px;
+      // margin-bottom: 20px;
+      // margin-right:70%;
+    }
   }
   &__impression{
     border: 1px solid ;
@@ -123,17 +128,22 @@
     }
   }
   &__career{
+    width: 100%;
+    margin-left: 50%;
+    // margin-top: -90%;
+    height: 300px;
+    border: 5px solid blue;
     h1{
-      position: absolute;
-      top: 120px;
-      left: 32%;
+      // position: absolute;
+      // top: 120px;
+      // left: 32%;
     }
     p{
-      top: 120px;
-      left: 35%;
+      // top: 120px;
+      // left: 35%;
       font-size: 20px;
-      position: absolute;
-      line-height: 50px;
+      // position: absolute;
+      // line-height: 50px;
       font-weight: bold;
       text-indent: -1em;
       letter-spacing: 2px;
