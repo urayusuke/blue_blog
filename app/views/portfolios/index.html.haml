@@ -9,19 +9,20 @@
         %a{:href => "#production"} 製作物
       %li
         %a{:href => "#skill"} スキル
-  .reason
-    %p
-      たった一つの動画が約2万再生を記録した
-      %br 
-      パソコン一つで色んな人の感動を生んだ
-      %br 
-      パソコンで何かを作る人になりたいと強く思うようになった
-      %br 
-      WEBページを教えてもらった時
-      %br 
-      世界が変わるような衝撃を受けた
-      %br
-      そこから僕はエンジニアを目指すきっかけとなった
+  %script{:src => "/components/Portfolio.js"}
+  -# .reason
+  -#   %p
+  -#     たった一つの動画が約2万再生を記録した
+  -#     %br 
+  -#     パソコン一つで色んな人の感動を生んだ
+  -#     %br 
+  -#     パソコンで何かを作る人になりたいと強く思うようになった
+  -#     %br 
+  -#     WEBページを教えてもらった時
+  -#     %br 
+  -#     世界が変わるような衝撃を受けた
+  -#     %br
+  -#     そこから僕はエンジニアを目指すきっかけとなった
     %video{:autoplay => "", :loop => "", :muted => "", :src => "/video/LuRjPEcQ8sJjImDw1.mp4"}
   #profile.profile
     .profile__bar
@@ -125,7 +126,7 @@
     .skill__bar
       %h1 スキル
     .time
-      2020年 10月 12日 更 新
+      2020年 10月 15日 更 新
     //- @portfolios.each do |portfolio|
     //  = portfolio.updated_at.strftime("%Y年 %m月 %d日 更 新") 
     -# :javascript
@@ -154,8 +155,8 @@
                 "React","PHP","Laravel","flutter","Java","MySQL","AWS"],
                 datasets: [{
                     label: "学習時間",
-                    data: [600, 660, 660, 620, 620, 510, 8, 344, 212, 20, 30, 640, 200],
-                    backgroundColor: 'royalblue',
+                    data: [600, 660, 660, 620, 620, 510, 9, 344, 212, 20, 30, 640, 200],
+                    backgroundColor: 'royalblue', 
                     borderColor: 'royalblue',
                   }]
                 },

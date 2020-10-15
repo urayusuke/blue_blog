@@ -82,6 +82,9 @@ gem 'jquery-rails'
 
 gem 'redcarpet'
 
+gem 'react-rails'
+gem 'webpacker'
+
 group :production do
   gem 'unicorn', '5.4.1'
 end
