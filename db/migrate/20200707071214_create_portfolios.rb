@@ -8,13 +8,13 @@ class CreatePortfolios < ActiveRecord::Migration[5.2]
       t.integer :Ruby
       t.integer :Ruby_on_Rails
       t.integer :JavaScript
+      t.integer :React
       t.integer :PHP
       t.integer :Laravel
-      t.integer :Java
+      t.integer :flutter
+      t.integer :Go
       t.integer :MySQL
       t.integer :AWS
-      t.integer :flutter
-      t.integer :React
       t.timestamps
     end
   end
