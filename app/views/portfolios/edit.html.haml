@@ -1,36 +1,43 @@
-- =begin
 - if user_signed_in?
-  .new
-    = form_for @portfolio do |f|
+  .portfolio__edit
+    = form_for(@portfolio) do |f|
       %p
-        illustrator
-        \#{f.number_field :illustrator}
-        = succeed "photoshop" do
-          %br/
-        = f.number_field :photoshop
-        = succeed "light_o_rama" do
-          %br/
-        = f.number_field :light_o_rama
-        = succeed "html" do
-          %br/
-        = f.number_field :html
-        = succeed "css" do
-          %br/
-        = f.number_field :css
-        = succeed "ruby" do
-          %br/
-        = f.number_field :ruby
-        = succeed "ruby_on_rails" do
-          %br/
-        = f.number_field :ruby_on_rails
-        = succeed "javascript" do
-          %br/
-        = f.number_field :javascript
-        = succeed "php" do
-          %br/
-        = f.number_field :php
-        = succeed "java" do
-          %br/
-        = f.number_field :java
+        Illustrator
+        = f.number_field :Illustrator
+        %br
+        HTML
+        = f.number_field :HTML
+        %br
+        CSS
+        = f.number_field :CSS
+        %br
+        Ruby
+        = f.number_field :Ruby
+        %br
+        Ruby_on_Rails
+        = f.number_field :Ruby_on_Rails
+        %br
+        JavaScript
+        = f.number_field :JavaScript
+        %br
+        React
+        = f.number_field :React
+        %br
+        PHP
+        = f.number_field :PHP
+        %br
+        Laravel
+        = f.number_field :Laravel
+        %br
+        flutter
+        = f.number_field :flutter
+        %br
+        Go
+        = f.number_field :Go
+        %br
+        MySQL
+        = f.number_field :MySQL
+        %br
+        AWS
+        = f.number_field :AWS
       = f.submit
-- =end

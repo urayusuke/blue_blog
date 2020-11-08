@@ -3,29 +3,24 @@ class PortfoliosController < ApplicationController
   def index
     @portfolios = Portfolio.all
   end 
+  
+  def edit
+    if user_signed_in?
+      @portfolio = Portfolio.find(params[:id])
+    else
+      redirect_to root_path
+    end
+  end
 
-  # def new
-  #   @portfolio = Portfolio.new
-  # end
+  def update
+    @portfolio = Portfolio.find(params[:id])
+    @portfolio.update(portfolio_params)
+    redirect_to portfolios_path
+  end
 
-  # def create
-  #   Portfolio.create(portfolio_params)
-  #   redirect_to root_path
-  # end
-
-  # def edit
-  #   @portfolio = Portfolio.find(params[:id])
-  # end
-
-  # def update
-  #   @portfolio = Portfolio.find(params[:id])
-  #   @portfolio.update(portfolio_params)
-  #   redirect_to root_path
-  # end
-
-  # private
-  # def portfolio_params
-  #   params.require(:portfolio).permit(:illustrator, :photoshop, :light_o_rama,:html, :css, :ruby, :ruby_on_rails, :javascript, :php, :java).merge(user_id: current_user.id)
-  # end
+  private
+  def portfolio_params
+    params.require(:portfolio).permit(:Illustrator,:HTML,:CSS,:Ruby,:Ruby_on_Rails,:JavaScript,:React,:PHP,:Laravel,:flutter,:Go,:MySQL,:AWS)
+  end
 
 end

@@ -124,24 +124,22 @@
     .skill__bar
       %h1 スキル
     .time
-      2020年 11月 5日 更 新
-    //- @portfolios.each do |portfolio|
-    //  = portfolio.updated_at.strftime("%Y年 %m月 %d日 更 新") 
-    -# :javascript
-      //var data = portfolio.Illustrator
-      //var data1 = portfolio.HTML
-      //var data2 = portfolio.CSS 
-      //var data3 = portfolio.html 
-      //var data4 = portfolio.Ruby
-      //var data5 = portfolio.Ruby_on_Rails
-      //var data6 = portfolio.JavaScript
-      //var data7 = portfolio.PHP
-      //var data8 = portfolio.Laravel
-      //var data9 = portfolio.Java
-      //var data10 = portfolio.MySQL
-      //var data11 = portfolio.AWS
-      //var data12 = portfolio.flutter
-      //var data13 = portfolio.React
+      - @portfolios.each do |portfolio|
+        = portfolio.updated_at.strftime("%Y年 %m月 %d日 更 新") 
+        :javascript
+          var data1 = #{portfolio.Illustrator}
+          var data2 = #{portfolio.HTML}
+          var data3 = #{portfolio.CSS}
+          var data4 = #{portfolio.Ruby}
+          var data5 = #{portfolio.Ruby_on_Rails}
+          var data6 = #{portfolio.JavaScript}
+          var data7 = #{portfolio.React}
+          var data8 = #{portfolio.PHP}
+          var data9 = #{portfolio.Laravel}
+          var data10 = #{portfolio.flutter}
+          var data11 = #{portfolio.Go}
+          var data12 = #{portfolio.MySQL}
+          var data13 = #{portfolio.AWS}
     %canvas#myChart
     %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"}
     :javascript
@@ -153,7 +151,7 @@
                 "React","PHP","Laravel","flutter","Go","MySQL","AWS"],
                 datasets: [{
                     label: "学習時間",
-                    data: [600, 660, 660, 630, 620, 510, 10, 344, 212, 30, 6, 640, 200],
+                    data: [data1,data2,data3,data4,data5,data6,data7,data8,data9,data10,data11,data12,data13],
                     backgroundColor: 'royalblue',
                     borderColor: 'royalblue',
                   }]
